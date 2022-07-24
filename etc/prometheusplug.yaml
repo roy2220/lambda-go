@@ -1,0 +1,6 @@
+Pushers:
+- ID: prometheus-pusher
+  URL: http://USER:PASS@TODO
+  Job: TODO
+  GroupingLabels:
+    TODO: TODO
