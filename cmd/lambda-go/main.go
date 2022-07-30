@@ -20,10 +20,10 @@ func main() {
 
 	// 添加DI函数
 	var program di.Program
-	program.AddFunctions(prometheusplug.Functions()...)
-	program.AddFunctions(dispatcher.Functions()...)
-	program.AddFunctions(demohdlr.Functions()...)
-	program.AddFunctions(handleEvent())
+	program.MustAddFunctions(prometheusplug.Functions()...)
+	program.MustAddFunctions(dispatcher.Functions()...)
+	program.MustAddFunctions(demohdlr.Functions()...)
+	program.MustAddFunctions(handleEvent())
 
 	// 运行DI函数
 	defer program.Clean()
